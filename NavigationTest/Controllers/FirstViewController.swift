@@ -1,13 +1,13 @@
 //
-//  ViewController.swift
-//  NavigationTest
+//  FirstViewController.swift
+//  PracticeUIKit
 //
 //  Created by Appnap Mahfuj on 14/3/24.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class FirstViewController: UIViewController {
 
     lazy var titleView: UIButton = {
         let lable = UIButton()
@@ -31,11 +31,22 @@ class ViewController: UIViewController {
     
     @objc func tapped(){
         let vc = SecondViewController()
-//        let detailNC = UINavigationController(rootViewController: vc)
-//        navigationController?.present(detailNC, animated: true)
-        
-//        self.navigationController?.setViewControllers([self], animated: true)
-        self.navigationController?.pushViewController(vc, animated: true)
+        let nav = UINavigationController(rootViewController: vc)
+        nav.navigationBar.isHidden = true
+        nav.modalPresentationStyle = .fullScreen
+        present(nav, animated: true)
+//        navigationController?.pushViewController(vc, animated: true)
     }
-}
+    
 
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
+}

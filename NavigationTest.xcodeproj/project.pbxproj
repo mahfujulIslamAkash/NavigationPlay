@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		356AD76D2BA318CC00290413 /* NavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356AD76C2BA318CC00290413 /* NavViewController.swift */; };
 		35FD4DFA2BA316DF006F855B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FD4DF92BA316DF006F855B /* AppDelegate.swift */; };
 		35FD4DFC2BA316DF006F855B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FD4DFB2BA316DF006F855B /* SceneDelegate.swift */; };
 		35FD4DFE2BA316DF006F855B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FD4DFD2BA316DF006F855B /* ViewController.swift */; };
 		35FD4E012BA316DF006F855B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35FD4DFF2BA316DF006F855B /* Main.storyboard */; };
 		35FD4E032BA316E0006F855B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35FD4E022BA316E0006F855B /* Assets.xcassets */; };
 		35FD4E062BA316E0006F855B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35FD4E042BA316E0006F855B /* LaunchScreen.storyboard */; };
+		35FD4E142BA31720006F855B /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FD4E102BA3171F006F855B /* SecondViewController.swift */; };
+		35FD4E152BA31720006F855B /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FD4E112BA3171F006F855B /* FirstViewController.swift */; };
+		35FD4E162BA31720006F855B /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FD4E122BA31720006F855B /* FourthViewController.swift */; };
+		35FD4E172BA31720006F855B /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FD4E132BA31720006F855B /* ThirdViewController.swift */; };
+		35FD4E192BA31741006F855B /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FD4E182BA31741006F855B /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		356AD76C2BA318CC00290413 /* NavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavViewController.swift; sourceTree = "<group>"; };
 		35FD4DF62BA316DF006F855B /* NavigationTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35FD4DF92BA316DF006F855B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35FD4DFB2BA316DF006F855B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,11 @@
 		35FD4E022BA316E0006F855B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35FD4E052BA316E0006F855B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35FD4E072BA316E0006F855B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35FD4E102BA3171F006F855B /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		35FD4E112BA3171F006F855B /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		35FD4E122BA31720006F855B /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		35FD4E132BA31720006F855B /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		35FD4E182BA31741006F855B /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 		35FD4DF82BA316DF006F855B /* NavigationTest */ = {
 			isa = PBXGroup;
 			children = (
+				35FD4E0F2BA31712006F855B /* Controllers */,
 				35FD4DF92BA316DF006F855B /* AppDelegate.swift */,
 				35FD4DFB2BA316DF006F855B /* SceneDelegate.swift */,
 				35FD4DFD2BA316DF006F855B /* ViewController.swift */,
@@ -63,8 +76,21 @@
 				35FD4E022BA316E0006F855B /* Assets.xcassets */,
 				35FD4E042BA316E0006F855B /* LaunchScreen.storyboard */,
 				35FD4E072BA316E0006F855B /* Info.plist */,
+				35FD4E182BA31741006F855B /* Extension.swift */,
 			);
 			path = NavigationTest;
+			sourceTree = "<group>";
+		};
+		35FD4E0F2BA31712006F855B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				35FD4E112BA3171F006F855B /* FirstViewController.swift */,
+				35FD4E122BA31720006F855B /* FourthViewController.swift */,
+				35FD4E102BA3171F006F855B /* SecondViewController.swift */,
+				35FD4E132BA31720006F855B /* ThirdViewController.swift */,
+				356AD76C2BA318CC00290413 /* NavViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +164,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35FD4E162BA31720006F855B /* FourthViewController.swift in Sources */,
+				35FD4E152BA31720006F855B /* FirstViewController.swift in Sources */,
+				35FD4E142BA31720006F855B /* SecondViewController.swift in Sources */,
+				35FD4E172BA31720006F855B /* ThirdViewController.swift in Sources */,
+				356AD76D2BA318CC00290413 /* NavViewController.swift in Sources */,
 				35FD4DFE2BA316DF006F855B /* ViewController.swift in Sources */,
 				35FD4DFA2BA316DF006F855B /* AppDelegate.swift in Sources */,
 				35FD4DFC2BA316DF006F855B /* SceneDelegate.swift in Sources */,
+				35FD4E192BA31741006F855B /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
